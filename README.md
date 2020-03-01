@@ -17,8 +17,6 @@ conda env create -f code-sdc/conda-env.yml
 
 Alternatively you can manually install the required libraries (see the contents of the conda-env.yml files) using ```pip```.
 
-
-
 **Hardware setup:** Training the DNN models (self-driving cars and anomaly detectors) on our datasets is computationally expensive. Therefore we recommend using a machine powered by a GPU. In our setting, we ran our experiments on a machine equipped with a i9 processor, 32 GB of memory, and an Nvidia GPU GeForce RTX 2080 Ti with 11GB of dedicated memory. 
 
 ## Repository Structure
@@ -81,16 +79,39 @@ You'll need the data folder which contains the training images.
 python code-predictors/training_runner.py
 ```
 
-## Improved simulator
+## Improved Udacity simulator
 
 Our improved Udacity simulator is available as binary file for Windows and macOS platforms [here](https://drive.google.com/drive/folders/1i4naoN9Wermz5LSW_RNeXdN2zhDMKIDJ). 
 
-## Demo video of the simulator
+### Screenshots and video of the simulator
+*Note:* Click on the screenshot images to watch a demo video.
 
-[![Watch the video](https://youtu.be/r4oiX6UBJPI/maxresdefault.jpg)](https://youtu.be/r4oiX6UBJPI)
+<a href="https://youtu.be/r4oiX6UBJPI"><img src="imgs/sunny.png" width="400"></img></a>
+
+<a href="https://youtu.be/r4oiX6UBJPI"><img src="imgs/rain.png" width="400"></img></a>
+
+<a href="https://youtu.be/r4oiX6UBJPI"><img src="imgs/mist.png" width="400"></img></a>
+
+<a href="https://youtu.be/r4oiX6UBJPI"><img src="imgs/snow.png" width="400"></img></a>
+
+## Reference
+
+If use our work in your research, or it helps it, or if you simply like it, please cite SelfOracle in your publications. Here is an example BibTeX entry:
+
+```
+@inproceedings{2020-icse-misbehaviour-prediction,
+	title= {Misbehaviour Prediction for Autonomous Driving Systems},
+	author= {Andrea Stocco and Michael Weiss and Marco Calzana and Paolo Tonella},
+	booktitle= {Proceedings of 42nd International Conference on Software Engineering},
+	series= {ICSE '20},
+	publisher= {ACM},
+	pages= {12 pages},
+	year= {2020}
+}
+```
 
 ## License 
-See the [LICENSE.md](https://github.com/testingautomated-usi/selforacle/LICENSE.md) file.
+See the [LICENSE.md](https://github.com/testingautomated-usi/selforacle/blob/master/LICENSE.md) file.
 
 ## Contacts
 
