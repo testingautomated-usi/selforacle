@@ -1,14 +1,16 @@
 # Misbehaviour Prediction for Autonomous Driving Systems
 
-This repository contains the code attached to the paper "Misbehaviour Prediction for Autonomous Driving Systems" by A. Stocco, M. Weiss, M. Calzana, P. Tonella, to be published in the proceedings of the 42nd International Conference in Software Engineering (ICSE 2020).
-See LICENSE.md for more information if you want to use the code.
+This repository contains the code attached to the paper "Misbehaviour Prediction for Autonomous Driving Systems"
+ by A. Stocco, M. Weiss, M. Calzana, P. Tonella, to be published in the proceedings of the 42nd International Conference in Software Engineering (ICSE 2020).
 
 ## Dependencies
 
 **Software setup:**
 We adopted the [PyCharm](https://www.jetbrains.com/pycharm/) Professional 2019.3.1, a Python IDE by JetBrains.
 
-If you have [anaconda](https://www.continuum.io/downloads) or [miniconda](https://conda.io/miniconda.html) installed on your machine, you can create and install all dependencies on a dedicated virtual environment, by running the following command:
+If you have [anaconda](https://www.continuum.io/downloads) or [miniconda](https://conda.io/miniconda.html) 
+installed on your machine, you can create and install all dependencies on a dedicated virtual environment, 
+by running the following command:
 
 ```python
 # Use TensorFlow with GPU
@@ -17,7 +19,9 @@ conda env create -f code-sdc/conda-env.yml
 
 Alternatively you can manually install the required libraries (see the contents of the conda-env.yml files) using ```pip```.
 
-**Hardware setup:** Training the DNN models (self-driving cars and anomaly detectors) on our datasets is computationally expensive. Therefore we recommend using a machine powered by a GPU. In our setting, we ran our experiments on a machine equipped with a i9 processor, 32 GB of memory, and an Nvidia GPU GeForce RTX 2080 Ti with 11GB of dedicated memory. 
+**Hardware setup:** Training the DNN models (self-driving cars and anomaly detectors) on our datasets is computationally expensive. 
+Therefore we recommend using a machine powered by a GPU. 
+In our setting, we ran our experiments on a machine equipped with a i9 processor, 32 GB of memory, and an Nvidia GPU GeForce RTX 2080 Ti with 11GB of dedicated memory. 
 
 ## Repository Structure
 
@@ -28,18 +32,22 @@ The repository is structured as follows:
   | This folder contains all the code to run the training and evaluation of the misbehavior predictors.
 - code-sdc
   | This folder contains all the code to train the self-driving car models and record them when they are driving.
-- evaluation-results
-  | This folder contains sqlite databases containing the results of our evaluation
 </pre>
 
 ### Other Artefacts
 
-We made the following artifacts available as a torrent file [here](https://academictorrents.com/details/221c3c71ac0b09b1bb31698534d50168dc394cc7). The files have a combined size of 24.9 GB, and the torrent contains:
+We made the following artifacts available as a torrent file [here](https://academictorrents.com/details/221c3c71ac0b09b1bb31698534d50168dc394cc7). The files have a combined size of 25 GB (compressed: 7.93 GB) , and the torrent contains:
 
+<pre/>
 - Trained SDC Models
+  | Contains the weights of the trained self driving car models.
 - Trained Failure Predictor Models
-- Training Dataset
-- Evaluation Dataset
+  | Contains the weights of the failure predictor models (i.e., the autoencoders and the deeproad pca).
+- Training Dataset & Evaluation Dataset
+  | These folders contain the datasets of images used for training and evaluation.
+- Evaluation Results
+  | This folders contains the sqlite databases containing the results of the evaluation.
+</pre>
 
 ## Usage
 
@@ -96,7 +104,8 @@ Our improved Udacity simulator is available as binary file for Windows and macOS
 
 ## Reference
 
-If use our work in your research, or it helps it, or if you simply like it, please cite SelfOracle in your publications. Here is an example BibTeX entry:
+If use our work in your research, or it helps it, or if you simply like it, please cite SelfOracle in your publications. 
+Here is an example BibTeX entry:
 
 ```
 @inproceedings{2020-icse-misbehaviour-prediction,
@@ -111,8 +120,9 @@ If use our work in your research, or it helps it, or if you simply like it, plea
 ```
 
 ## License 
-See the [LICENSE.md](https://github.com/testingautomated-usi/selforacle/blob/master/LICENSE.md) file.
+MIT. See the [LICENSE.md](https://github.com/testingautomated-usi/selforacle/blob/master/LICENSE.md) file.
 
 ## Contacts
 
-For any questions, feel free to contact Andrea Stocco ([andrea.stocco@usi.ch](mailto:andrea.stocco@usi.ch)) or Michael Weiss ([michael.weiss@usi.ch](mailto:michael.weiss@usi.ch)).
+For any questions, feel free to contact Andrea Stocco ([andrea.stocco@usi.ch](mailto:andrea.stocco@usi.ch)) 
+or Michael Weiss ([michael.weiss@usi.ch](mailto:michael.weiss@usi.ch)).
