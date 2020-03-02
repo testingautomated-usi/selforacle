@@ -3,6 +3,7 @@
 This repository contains the code attached to the paper "Misbehaviour Prediction for Autonomous Driving Systems"
  by A. Stocco, M. Weiss, M. Calzana, P. Tonella, to be published in the proceedings of the 42nd International Conference in Software Engineering (ICSE 2020).
 
+A preprint of the paper can be found on [arXiv](https://arxiv.org/abs/1910.04443).
 ## Dependencies
 
 **Software setup:**
