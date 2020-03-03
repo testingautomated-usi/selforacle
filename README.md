@@ -21,7 +21,7 @@ conda env create -f code-sdc/conda-env.yml
 Alternatively you can manually install the required libraries (see the contents of the conda-env.yml files) using ```pip```.
 
 **Hardware setup:** Training the DNN models (self-driving cars and anomaly detectors) on our datasets is computationally expensive. 
-Therefore we recommend using a machine powered by a GPU. 
+Therefore we recommend using a machine with GPU. 
 In our setting, we ran our experiments on a machine equipped with a i9 processor, 32 GB of memory, and an Nvidia GPU GeForce RTX 2080 Ti with 11GB of dedicated memory. 
 
 ## Repository Structure
@@ -37,7 +37,7 @@ The repository is structured as follows:
 
 ### Other Artefacts
 
-We made the following artifacts available as a torrent file [here](https://academictorrents.com/details/221c3c71ac0b09b1bb31698534d50168dc394cc7). The files have a combined size of 25 GB (compressed: 7.93 GB) , and the torrent contains:
+We made the following artifacts available as a torrent [here](https://academictorrents.com/details/221c3c71ac0b09b1bb31698534d50168dc394cc7). The files have a combined size of 25 GB (compressed: 7.93 GB) , and the torrent contains:
 
 <pre/>
 - Trained SDC Models
@@ -105,7 +105,7 @@ Our improved Udacity simulator is available as binary file for Windows and macOS
 
 ## Reference
 
-If use our work in your research, or it helps it, or if you simply like it, please cite SelfOracle in your publications. 
+If you use our work in your research, or it helps it, or if you simply like it, please cite SelfOracle in your publications. 
 Here is an example BibTeX entry:
 
 ```
